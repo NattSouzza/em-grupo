@@ -1,0 +1,253 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos do header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav li a {
+    color: #fff;
+}
+
+nav li a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+/* Estilos do hero */
+.hero {
+    background-image: url("hero.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #000000;
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3rem;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin-top: 2rem;
+    text-decoration: none;
+}
+
+/* Estilos do destaques */
+.destaque-post {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.destaque-post img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.destaque-post h3 {
+    margin: 0;
+    color: #007BFF;
+}
+
+.destaque-post p {
+    margin: 0;
+}
+
+.destaque-post a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #007BFF;
+}
+
+/* Estilos das categorias */
+.categorias ul {
+    list-style: none;
+    padding: 0;
+}
+
+.categorias li {
+    margin-bottom: 1rem;
+}
+
+.categorias li a {
+    color: #007BFF;
+}
+
+.categorias li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos do sobre-nos */
+.sobre-nos img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos do footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+
+/* Media queries para ajustar o layout em diferentes tamanhos de tela */
+@media screen and (max-width: 768px) {
+    /* Estilos para telas menores, como celulares e iPads em modo retrato */
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav li {
+        display: block;
+        margin: 1rem 0;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Estilos para dispositivos móveis em modo paisagem e outros dispositivos pequenos */
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero .btn {
+        font-size: 14px;
+    }
+
+    .destaque-post {
+        flex-direction: column;
+    }
+
+    .destaque-post img {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Estilos da seção de destinos */
+.destinos {
+    margin-top: 30px;
+}
+
+.destinos h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.destinos h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.destinos ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.destinos li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.destinos img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.destinos a {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.destinos a:hover {
+    text-decoration: underline;
+}
+
+.destinos p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.destinos .container {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.destinos .container h3 {
+    margin-top: 30px;
+}
+
+.destinos .container ul {
+    margin-left: 20px;
+}
+
+.destinos .container li {
+    list-style: disc;
+}
+
+.destinos .container p:last-child {
+    margin-bottom: 0;
+}
