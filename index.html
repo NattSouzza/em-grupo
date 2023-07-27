@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explorando o Mundo - Blog de Viagens</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -16,7 +17,7 @@
                     <li><a href="destinos.html">Destinos</a></li>
                     <li><a href="#dicas-viagens" class="scroll-link">Dicas</a></li>
                     <li><a href="#contato">Contato</a></li>
-                    <li><a href="sobre-nos">Sobre Nós</a></li>
+                    <li><a href="sobre-nos.html">Sobre Nós</a></li>
                 </ul>
             </nav>
         </div>
@@ -27,7 +28,6 @@
         <section class="hero">
             <div class="container">
                 <h2>Descubra as maravilhas do mundo</h2>
-                <a href="#destinos" class="btn">Explorar Destinos</a>
             </div>
         </section>
 
@@ -55,12 +55,26 @@
         <section class="categorias">
             <div class="container">
                 <h2>Categorias</h2>
-                <ul>
-                    <li><a href="#">Praias Paradisíacas</a></li>
-                    <li><a href="#">Aventuras na Natureza</a></li>
-                    <li><a href="#">Viagens Culturais</a></li>
-                    <li><a href="#">Cidades Vibrantes</a></li>
-                </ul>
+                <div class="categoria-grid">
+                    <div class="categoria-item">
+                        <img src="praia-paradisiaca.jpg" alt="Praias Paradisíacas">
+                        <h3>Praias Paradisíacas</h3>
+                        <p>Explore as praias mais paradisíacas do mundo. Areias brancas, águas cristalinas e paisagens de tirar o fôlego esperam por você em destinos deslumbrantes.</p>
+                        <a href="praia-paradisiaca.html">Ver mais</a>
+                    </div>
+                    <div class="categoria-item">
+                        <img src="aventuras-natureza.jpg" alt="Aventuras na Natureza">
+                        <h3>Aventuras na Natureza</h3>
+                        <p>Descubra a beleza natural do mundo e embarque em aventuras incríveis. Trilhas, montanhas, cachoeiras e muito mais para os amantes da natureza.</p>
+                        <a href="aventuras-natureza.html">Ver mais</a>
+                    </div>
+                    <div class="categoria-item">
+                        <img src="cidades-vibrantes.jpg" alt="Cidades Vibrantes">
+                        <h3>Cidades Vibrantes</h3>
+                        <p>Explore a energia e a diversidade das cidades ao redor do mundo. Descubra lugares movimentados, vida noturna agitada e uma infinidade de opções culturais e gastronômicas.</p>
+                        <a href="cidades-vibrantes.html">Ver mais</a>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -84,18 +98,52 @@
             </div>
         </section>
 
-        <section class="sobre-nos">
-            <div class="container">
-                <h2>Sobre Nós</h2>
-                <img src="equipe.jpg" alt="Equipe">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-        </section>
+        <main>
+            <main>
+                <section id="sobre-nos" class="sobre-nos">
+                    <div class="container">
+                        <h2>Sobre a Equipe</h2>
+                        <p>Conheça nossa equipe de profissionais treinados especialmente para te ajudar.</p>
+                        <div class="foto-grid">
+                            <div class="foto-item">
+                                <img src="foto1.jpg" alt="Foto 1">
+                                <div class="redes-sociais">
+                                    <a href="https://www.instagram.com/0__gabs__0/" class="instagram-icon"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://wa.me/41992668439" class="whatsapp-icon"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                            <div class="foto-item">
+                                <img src="foto2.jpg" alt="Foto 2">
+                                <div class="redes-sociais">
+                                    <a href="https://www.instagram.com/nat_souzza_/" class="instagram-icon"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://wa.me/41988426625" class="whatsapp-icon"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>Todos os direitos reservados &copy; Explorando o Mundo</p>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Explorando o Mundo</h3>
+                </div>
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="#destinos-famosos">Destinos</a></li>
+                        <li><a href="#dicas-viagens">Dicas</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="#sobre-nos">Sobre a Equipe</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/0__gabs__0/" class="instagram-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/41988426625" class="whatsapp-icon"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
